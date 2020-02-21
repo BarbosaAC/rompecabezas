@@ -29,7 +29,37 @@
 	position: absolute;
 	width: 50%;
 	height:40%;
-	background-color:gray;
+	background-color:transparent;
+	margin-left: 250px;
+	margin-top:50px;
 	display: none;
-	margin: auto;
+	text-align:center; 
+	
+}
+#textContent{
+	font-size: xx-large;
+	color: red;
+	align-content: center;
+	background-color: gray;
+}
+.piece-zoomin{
+	animation: zoomin 1s 1;
+}
+
+@keyframes zoomin{
+  /*from {
+  	transform:scale(5);
+  }
+  to{
+    transform:scale(1);
+	}*/
+	  0% {
+  	transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(90deg) scale(5);
+  }
+  100% {
+  	transform: rotate(0deg) scale(1);
+  }
 }
